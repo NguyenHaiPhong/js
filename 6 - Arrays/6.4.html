@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let footballPlayers = ["Ronaldo", "Messi", "Neymar"];
+        let answer = prompt("Press Y to delete football player: 0 is Ronaldo, 1 is Messi, 2 is Neymar. Press N to end.");
+        answer.toLowerCase();
+        if (answer == "y") {
+            let index = prompt("Your choice?");            
+            footballPlayers.splice(index, 1);
+        }
+        console.log(footballPlayers); 
+        if (answer == "n") {
+            console.log("Good bye!");
+        } 
+    </script>
+</body>
+</html>

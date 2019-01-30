@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let listActions = ["C: Create", "R: Read", "U: Update", "D: Delete", "E: End"];
+        let listItems = ["T-Shirt", "Sweater"];
+        let loop = true;
+        while (loop) {
+            let action = prompt("Welcome to our shop, what do you want to do? ('C'reate, 'R'ead, 'U'pdate, 'D'elete, 'E'nd)? (Uppercase and lowercase are allowed).");
+            action.toLowerCase();
+            switch (action) {
+                case "r":
+                    prompt("Our items: " + listItems + ". Press any key to continue."); 
+                    break;
+                case "c":
+                    newItem = prompt("New item?");
+                    listItems.push(newItem);
+                    prompt("Our items: " + listItems + ". Press any key to continue.");
+                    break;
+                case "u":
+                    position = prompt("Update position?");
+                    parseInt(position);
+                    newItem = prompt("New item?");
+                    listItems[position] = newItem;
+                    prompt("Our items: " + listItems + ". Press any key to continue.");
+                    break;
+                case "d":
+                    position = prompt("Delete position?");
+                    listItems.splice(position, 1);
+                    prompt("Our items: " + listItems + ". Press any key to continue.");
+                    break;
+                case "e":
+                    prompt("Good bye!");
+                    loop = false;
+                    break;
+                default:
+                    prompt("We don't have that action.");
+                    break;
+            }
+        }       
+    </script>
+</body>
+</html>

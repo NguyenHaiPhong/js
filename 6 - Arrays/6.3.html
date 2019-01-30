@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let footballPlayers = ["Ronaldo", "Messi", "Neymar"];
+        let answer = prompt("Press Y to change football player name. Press N to end.");
+        answer.toLowerCase();
+        if (answer == "y") {
+            let index = prompt("Choose the name you wish to change: 0 is Ronaldo, 1 is Messi, 2 is Neymar.");
+            parseInt(index);
+            let footballPlayer = prompt("New football player name?");      
+            footballPlayers[index] = footballPlayer;
+        }
+        prompt(footballPlayers);
+        if (answer == "n") {
+            prompt("Good bye!");
+        }
+    </script>
+</body>
+</html>

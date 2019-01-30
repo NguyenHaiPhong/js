@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Xin moi nhap tham so a.");
+        let b = prompt("Xin moi nhap tham so b.");
+        let c = prompt("Xin moi nhap tham so c.");
+        let delta = b*b - 4*a*c;
+        if (delta == 0) {
+            prompt("Phương trình có 1 nghiệm duy nhất");
+        } else if (delta > 0) {
+            prompt("Phương trình có 2 nghiệm phân biệt");
+        } else if (delta < 0) {
+            prompt("Phương trình vô nghiệm");
+        }
+    </script>
+</body>
+</html>

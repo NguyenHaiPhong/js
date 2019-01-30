@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inventory = {
+            gold: 500,
+            pouch: ["flint", "twine", "gemstone"],
+            backpack: ["xylophone","dagger","bedroll","bread loaf"]
+        }
+        inventory.pocket = ["seashell", "strange berry","lint"];
+        delete inventory.backpack[1];
+        inventory.gold = inventory.gold + 50;
+        delete inventory.pouch;
+        console.log(inventory);
+    </script>
+</body>
+</html>

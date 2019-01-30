@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  cristianoRonaldo = {
+            name: "Cristiano Ronaldo",
+            yearOfBirth: 1985,
+            homeTown: "Portugal",
+        }
+        let answer = prompt("Y to delete information. N to end.");
+        answer.toLowerCase();
+        if (answer == "y") {
+            let key = prompt("Information you want to delete: 0 is name, 1 is year of birth, 2 is home town.");
+            let newKey = parseInt(key);
+            console.log(typeof(newKey));
+            switch (newKey) {
+                case 0:
+                    delete cristianoRonaldo.name;
+                    break;
+                case 1:
+                    delete cristianoRonaldo.yearOfBirth;
+                    break;
+                case 2:
+                    delete cristianoRonaldo.homeTown;
+                    break;
+            }
+        console.log(cristianoRonaldo);
+        }
+        if (answer == "n") {
+            prompt("Good bye!");
+        } 
+    </script>
+</body>
+</html>
